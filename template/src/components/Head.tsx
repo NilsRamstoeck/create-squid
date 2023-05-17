@@ -6,6 +6,6 @@ type Props = {
 };
 
 export function Head({ children }: Props) {
-
+  if (!('document' in globalThis)) return null;
   return createPortal(<>{children}</>, document.head);
 }
