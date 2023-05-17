@@ -1,6 +1,6 @@
 {
   "name": "create-squid-ssr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "intitialiser for the squid framework",
   "main": "dist/main.js",
   "scripts": {
