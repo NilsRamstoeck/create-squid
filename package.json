@@ -1,0 +1,33 @@
+{
+  "name": "create-squid-ssr",
+  "version": "1.0.0",
+  "description": "intitialiser for the squid framework",
+  "main": "dist/main.js",
+  "scripts": {
+    "prepare": "tsc",
+    "dev": "tsc -w"
+  },
+  "bin": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsRamstoeck/create-squid.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "ts",
+    "typescript",
+    "preact",
+    "squid"
+  ],
+  "author": "Nils Ramstöck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NilsRamstoeck/create-squid/issues"
+  },
+  "homepage": "https://github.com/NilsRamstoeck/create-squid#readme",
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "typescript": "^5.0.4"
+  }
+}

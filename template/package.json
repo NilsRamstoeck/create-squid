@@ -1,0 +1,16 @@
+{
+  "name": "%%PACKAGE_NAME%%",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/squid-server.js",
+  "scripts": {
+    "build": "squid build",
+    "dev": "squid dev",
+    "start": "squid start",
+    "stop": "squid stop"
+  },
+  "author": "%%AUTHOR%%",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

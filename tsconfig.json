@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+  },
+  "include": ["main.ts"],
+  "exclude": ["template/**/*"]
+}
