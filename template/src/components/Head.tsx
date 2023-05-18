@@ -1,4 +1,5 @@
-import { Fragment, ComponentChildren } from 'preact';
+/* @jsx h */
+import { h, Fragment, ComponentChildren } from 'preact';
 import { createPortal } from 'preact/compat';
 
 type Props = {

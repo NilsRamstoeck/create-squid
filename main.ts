@@ -53,6 +53,8 @@ const question = (query: string): Promise<string> => {
     console.error(e);
     process.exit();
   }
+
+  stop();
   const installProcess = spawn(`${npm}`, ['install', 'squid-ssr'], {
     stdio: 'inherit'
   });
