@@ -3,7 +3,19 @@ import { useState } from 'preact/hooks';
 import { Document } from '@/components/Document';
 import { Head } from '@/components/Head';
 
-export default function App() {
+export function getServerSideProps() {
+  return {
+    props: {
+      name: 'World'
+    }
+  };
+}
+
+type Props = {
+
+} & ReturnType<typeof getServerSideProps>['props'];
+
+export default function App({ name }: Props) {
   const [count, setCount] = useState<number>(0);
 
   console.log(1);
@@ -13,7 +25,7 @@ export default function App() {
       <Head>
         <title>My first Squid!</title>
       </Head>
-      <div>Hello World {count}</div>
+      <div>Hello {name} {count}</div>
       <button onClick={() => setCount(count + 1)}>Count</button>
     </Document>
   </>;
